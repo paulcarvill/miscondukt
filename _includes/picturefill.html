@@ -1,4 +1,4 @@
-<div data-picture data-alt="[{{ include.proj }}]">
+<div data-picture data-alt="[{{ include.file }}]">
   <div data-src="{{ site.baseurl }}/img/{{ page.name }}/{{ include.file }}.jpg"></div>
   <div data-src="{{ site.baseurl }}/img/{{ page.name }}/{{ include.file }}.jpg" data-media="(max-width:600px)"></div>
   <div data-src="{{ site.baseurl }}/img/{{ page.name }}/{{ include.file }}.jpg" data-media="(max-width:600px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
@@ -7,6 +7,6 @@
   <div data-src="{{ site.baseurl }}/img/{{ page.name }}/{{ include.file }}.jpg" data-media="(min-width: 1008px)"></div>
   <div data-src="{{ site.baseurl }}/img/{{ page.name }}/{{ include.file }}.jpg" data-media="(min-width: 1008px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
   <noscript>
-    <img src="{{ site.baseurl }}/img/{{ include.proj }}/{{ include.file }}.jpg" alt="[{{ include.proj }}]">
+    <img src="{{ site.baseurl }}/img/{{ page.name }}/{{ include.file }}.jpg" alt="[{{ page.name }}]">
   </noscript>
 </div>
