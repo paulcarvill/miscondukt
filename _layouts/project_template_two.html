@@ -1,0 +1,30 @@
+---
+layout: project
+---
+
+<div class="one">
+	{% include home_project.html size="1200x360" %}
+</div>
+
+<div id="container">
+
+	<div class="project nine description">
+      <div>
+        <h2 class="bentonsanslight">{{ page.index }}</h2>
+        <h3 class="bentonsansmedium">{{ page.project }}</h3>
+        <h4 class="bentonsanslight">{{ page.client }}</h4>
+        <p class="bentonsanslight">{{ page.description }}</p>
+        <p class="bentonsansmedium"><b><a href="{{ page.link }}">{{ page.linktext }}</a></b></p>
+      </div>
+    </div> <!-- end project -->
+
+    <div class="project eight">
+		{% include home_project.html size="750-mobile" %}
+    </div>
+        
+    <div class="project ten">
+    	{% include home_project.html size="750" %}
+	</div>
+
+    <p style="clear:both">&nbsp;</p>
+ </div>

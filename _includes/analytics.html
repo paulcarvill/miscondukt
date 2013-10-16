@@ -1,0 +1,14 @@
+<script>
+    if ( !Modernizr.touch ) {
+      var header = document.querySelector('.one');
+      var container = document.querySelector('#container');
+      var origOffsetY = header.offsetHeight;
+      function onScroll(e) {
+        window.scrollY >= 360 ? header.classList.add('sticky') :
+                                header.classList.remove('sticky');
+        window.scrollY >= 360 ? container.classList.add('stickypadding') :
+                                container.classList.remove('stickypadding');
+      }
+      document.addEventListener('scroll', onScroll);
+    }
+  </script>

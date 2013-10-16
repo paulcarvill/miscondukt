@@ -1,0 +1,786 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  background-color: none;
+  font: 13.34px Helvetica, Arial, sans-serif;
+  font-size: small;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 { margin-bottom: 1em; }
+
+p { margin: 1em 0; }
+
+a         { color: #00a; }
+a:hover   { color: #000; }
+a:visited { color: #a0a; }
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+
+
+.bentonsanslight {
+  font-family: "Benton Sans Light";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.bentonsansmedium {
+  font-family: "Benton Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+
+html, body, div, img, p, h1, h2, h3, a {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: #d7d7d7;
+}
+
+a img {
+    vertical-align: bottom;
+  border: 0;
+}
+
+body, h1, h2, h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+header {
+  height: 45px;
+  background: #fff;
+  display: table;
+  top: 9px;
+  opacity: 0.8;
+  z-index: 1000;
+}
+
+a,
+a:visited,
+a:active,
+a#contact {
+  color: #363636;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:link {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+header,
+header h1 {
+  line-height: 30px;
+}
+
+#header-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+#container {
+  min-height: 720px;
+}
+
+.container {
+  height: 63px;
+}
+
+#container,
+.container,
+#header-inner,
+#footer-inner {
+  width: 750px;
+  margin: 0 auto;
+  color: #363636;
+}
+
+#header-inner h1 {
+  padding-left: 0.25em;
+}
+
+#header-inner p {
+  padding-right: 0.25em;
+}
+
+.meta {
+  display: none;
+}
+
+.none {
+  height: 0;
+  overflow:hidden;
+}
+
+h1 {
+  float: left;
+  margin-left: 18px;
+}
+
+header p {
+  float: right;
+}
+
+.project {
+  float: left;
+  width: 240px;
+  height: auto;
+  position: relative;
+}
+
+.page .project {
+  float: none;
+  width: auto;
+  margin: 0 auto;
+}
+
+.project img {
+    width: 100%;
+}
+
+.page .project img {
+  width: auto;
+  margin: 0 auto;
+  vertical-align: bottom;
+}
+
+.page .project img {
+  width: auto;
+}
+
+.single {
+  clear: both;
+}
+
+.two-col.first {
+  float: left;
+}
+
+.two-col.last {
+  float: right;
+}
+
+.three-col {
+  float: left;
+}
+
+.desc {
+  float: right;
+  width: 314px;
+}
+
+.desc p {
+  background: #fff;
+  float: left;
+}
+
+.desc .title {
+  font-size: 24px;
+  padding: 12px;
+  margin-bottom: 2px;
+}
+
+ .project .info {
+  text-align: left;
+  padding: 5px;
+  min-height: 68px;
+ }
+
+ .project .info p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    line-height: 1.1666em;
+    padding: 0;
+  }
+
+   .project .info p:nth-child(odd),
+   .project .info p:nth-child(odd) a {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    line-height: 1.1666em;
+  }
+
+  .project .info p:nth-child(3) a {
+    text-transform: uppercase;
+  }
+
+.more {
+  clear: left;
+  background: #fff;
+  float: left;
+  padding: 12px;
+  line-height: 1.5em;
+}
+
+.more div {
+  float: left;
+}
+
+.project p {
+  padding-left: 0.25em;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+footer {
+  clear: left;
+  min-height: 278px;
+  background: #333;
+  line-height: 1.15em;
+  padding-bottom: 1em;
+}
+
+footer a,
+footer a:visited,
+footer a:active {
+  color: #ccc;
+}
+
+#footer-inner p {
+  display: block;
+  font-size: 13px;
+  color: #ccc;
+  letter-spacing: 0.1em;
+}
+
+ #footer-inner div h2 {
+    margin-top: 28px;
+  }
+
+#footer-inner h2 {
+  color: #111;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#footer-inner div:nth-of-type(2) p:nth-of-type(2) {
+  line-height: 2em;
+}
+
+#footer-inner div:nth-of-type(3) {
+  clear: left;
+  display: block;
+  width: auto;
+}
+
+.prev {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  margin-top: 250px;
+}
+
+.next {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  margin-top: 250px;
+}
+
+.prev a {
+  display: block;
+  height: 48px;
+}
+
+.next a {
+  display: block;
+  height: 48px;
+}
+
+.prev a span,
+.next a span {
+  display: none;
+}
+
+
+
+
+/*****************************************************************************/
+/*
+/* Project pages
+/*
+/*****************************************************************************/
+.description {
+  background-color: #fff;
+  height: auto;
+  text-align: left;
+  padding: 15px;
+  width: 474px;
+}
+
+.description h2,
+.description h3,
+.description h4 {
+  line-height: 1em;
+  color: #555;
+}
+
+.description h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.description h3 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.description h4 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.description p {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #aaa;
+  padding: 0;
+}
+
+.projectpage .eight {
+  height: auto;
+}
+
+.projectpage .ten {
+  width: 795px;
+  height: auto;
+}
+
+.projectpage .eleven {
+  width: 504px;
+  height: 504px;
+}
+
+.projectpage .twelve {
+  width: 168px;
+  height: 168px;
+  float: left;
+  background: #333;
+  margin-left: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+/* SMALL SCREENS */
+/*****************/
+@media screen and (max-width: 749px) {
+
+  html {
+  background: #fff;
+  }
+
+  #container,
+  .container,
+  #header-inner,
+  #footer-inner {
+    width: 95%;
+  }
+
+  #container {
+    clear: left;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  header {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    width: 100%;
+    height: 24px;
+  }
+
+  #header-inner {
+    width: 100%;
+  }
+
+  .project {
+    margin-bottom: 9px;
+  }
+
+  .info {
+    background: #e6e6e6;
+  }
+
+  .one {
+    width: 100%;
+  }
+
+  .one img {
+    width: 100%;
+  }
+
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .eight,
+  .nine,
+  .ten,
+  .eleven {
+    width: 50%;
+  }
+
+  .projectpage .eight,
+  .projectpage .nine,
+  .projectpage .ten,
+  .projectpage .eleven {
+    width: 100%;
+    height: auto;
+  }
+
+  .page .project>div:nth-of-type(4) {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIUM SCREENS UP */
+/******************/
+@media screen and (min-width: 750px) {
+  #footer-inner div {
+    float: left;
+    margin-left: 18px;
+    width: 295px;
+  }
+}
+
+
+/* MEDIUM SCREENS ONLY */
+/******************/
+@media screen and (min-width: 750px) and (max-width: 1007px) {
+  #container,
+  #header-inner,
+  #footer-inner {
+    width: 750px;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  header {
+    margin-bottom: 9px;
+    margin-top: 9px;
+  }
+
+  .project {
+    margin-bottom: 9px
+  }
+
+  .info {
+    height: 100px;
+    background: #e7e7e7;
+  }
+
+  .one {
+    float: right;
+    width: 100%;
+    text-align: center;
+  }
+
+  .one img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .ten,
+  .eleven {
+    width: 250px;
+    height: 350px;
+  }
+
+  .projectpage .nine {
+    float: right;
+  }
+
+  .projectpage .ten {
+    width: 100%;
+    height: auto;
+  }
+
+  .eight,
+  .nine {
+    width: 375px;
+    height: 475px;
+  }
+
+  footer {
+    margin-top: 48px;
+  }
+
+  .description {
+    width: 345px;
+    height: 345px;
+  }
+
+  .description p {
+    font-size: 0.8em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* RETINA SCREENS */
+/******************/
+@media screen and (-webkit-min-device-pixel-ratio: 2.0) {
+
+  [data-picture] {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* BIG SCREENS */
+/***************/
+@media screen and (min-width: 1008px) {
+
+  body {
+    margin: 0 auto;
+  }
+
+  #container,
+  .container,
+  #header-inner,
+  #footer-inner {
+    width: 1008px;
+  }
+  
+  header {
+    position: fixed;
+    margin: 0 auto;
+  }
+
+  .project {
+    width: 314px;
+    margin-bottom: 9px;
+    z-index: 10;
+  }
+
+  .info {
+    height: 82px;
+    background: #e7e7e7;
+  }
+
+  .sticky {
+    position: fixed;
+    top: -297px;
+  }
+
+  #container.stickypadding {
+    margin-top: 369px;
+  }
+
+  .one {
+    width: 100%;
+    text-align: center;
+    z-index: 100;  
+  }
+
+  .one img {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .two {
+    width: 168px;
+    height: 260px;
+  }
+
+  .three {
+    width: 168px;
+    height: 268px;
+  }
+
+  .four {
+    width: 168px;
+    height: 268px;
+  }
+
+  .five {
+    width: 168px;
+    height: 268px;
+  }
+
+  .six {
+    width: 168px;
+    height: 268px;
+  }
+
+  .seven {
+    width: 168px;
+    height: 268px;
+  }
+
+  .eight {
+    clear: left;
+    width: 504px;
+    height: 604px;
+  }
+
+  .nine {
+    width: 504px;
+    height: 604px;
+  }
+
+  .ten {
+    width: 168px;
+    height: 268px;
+  }
+
+  .eleven {
+    width: 168px;
+    height: 268px;
+  }
+
+  #footer-inner div:nth-of-type(2) {
+    margin-left: 54px;
+  }
+
+  .projectpage .nine {
+    width: 474px;
+    height: 474px;
+    float: right;
+  }
+
+  .description {
+    height: 474px;
+  }
+}
+
+.one {
+  height: 360px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 9px;
+}
+
+.one img {
+  height: 360px;
+  width: 1200px;
+  margin-left: -150%;
+  margin-right: -150%;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .one {
+    height: 180px;
+  }
+
+  .one img {  
+    height: 180px;
+    width: 600px;
+    margin-left: -100%;
+    margin-right: -100%;
+  }
+
+  .description {
+    background-color: #fff;
+    text-align: left;
+    padding: 0;
+    width: 95%;
+    height: auto;
+  }
+}
