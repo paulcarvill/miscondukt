@@ -4,10 +4,13 @@
       var container = document.querySelector('#container');
       var origOffsetY = header.offsetHeight;
       function onScroll(e) {
-        window.scrollY >= 360 ? header.classList.add('sticky') :
-                                header.classList.remove('sticky');
-        window.scrollY >= 360 ? container.classList.add('stickypadding') :
-                                container.classList.remove('stickypadding');
+        if (window.scrollY >= 360) {
+          header.classList.add('sticky');
+          container.classList.add('stickypadding');
+        } else {
+          header.classList.remove('sticky');
+          container.classList.remove('stickypadding');
+        }
       }
       document.addEventListener('scroll', onScroll);
     }
