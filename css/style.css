@@ -291,7 +291,7 @@ footer {
   font-weight: 500;
   font-size: 13px;
   line-height: 24px;
-  padding-top: 24px;
+  padding-top: 18px;
 }
 
 footer a,
@@ -459,11 +459,12 @@ footer h2 {
     footer {
       float: left;
       width: 100%;
+      padding-top: 12px;
     }
 
     footer p,
     footer h2 {
-      font-size: 24px;
+      font-size: 12px;
       font-weight: 300px;
       line-height: 3em;
     }
@@ -514,17 +515,21 @@ footer h2 {
   }
 
   .project a {
-    font-size: 24px;
+    font-size: 12px;
     line-height: 1.5em;
   }
 
+  .project .info {
+    padding: 4px 5px 0 5px;
+  }
+
   .project .info p:nth-child(2) a {
-    font-size: 24px;
+    font-size: 12px;
     line-height: 1.1666em;
   }
 
   .project .info p:nth-child(3) a {
-    font-size: 18px;
+    font-size: 9px;
     line-height: 2em;
   }
 
