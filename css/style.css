@@ -1,10 +1,9 @@
-/*****************************************************************************/
-/*
-/* Common - applied to all screens
-/*
-/*****************************************************************************/
-
 /* Global Reset */
+
+br {
+  font-size: 0;
+  line-height: 0;
+}
 
 html, body { height: 100%; }
 
@@ -48,12 +47,7 @@ html, body {
   font-size: small;
 }
 
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-
+/* Home */
 html {
   background: #d7d7d7;
 }
@@ -118,14 +112,6 @@ body {
   margin: 0 auto;
 }
 
-#header-inner h1 {
-  padding-left: 0.25em;
-}
-
-#header-inner p {
-  padding-right: 0.25em;
-}
-
 .meta {
   display: none;
 }
@@ -137,7 +123,6 @@ body {
 
 h1 {
   float: left;
-  margin-left: 18px;
 }
 
 header p {
@@ -159,7 +144,7 @@ header p {
   position: relative;
 }
 
-.project a,
+.project p,
 .project h2,
 .project h3,
 .project h4 {
@@ -167,8 +152,8 @@ header p {
   font-family: "chrono-web";
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 1.714em;
+  font-size: 12px;
+  line-height: 1.5em;
 }
 
 .project h2 {
@@ -300,9 +285,6 @@ footer h2 {
   font-weight: 300;
 }
 
-
-
-
 #footer-inner div:nth-of-type(3) {
   clear: left;
   display: block;
@@ -338,14 +320,7 @@ footer h2 {
   display: none;
 }
 
-
-
-
-/*****************************************************************************/
-/*
-/* Project pages
-/*
-/*****************************************************************************/
+/* Project pages */
 .description {
   background-color: #fff;
   height: auto;
@@ -388,25 +363,9 @@ footer h2 {
   margin-left: 9px;
 }
 
-
-
-
-
-
-
 /* SMALL SCREENS */
 /*****************/
-
-/* 
-  Minor breakpoint for:
-    1. keeping image aspect ratio on hero image
-    2. keeping text readable line length
-*/
 @media screen and (max-width: 600px) {
-  /* 
-    this is the hero image on all screens.
-    we load a smaller image but keep the aspect ratio
-  */
   .one {
     height: 180px;
     text-align: center;
@@ -421,10 +380,6 @@ footer h2 {
     margin-right: -150%;
   }
 
-  /* 
-    big chunk of text for each project page.
-    needs to be full width on small screens to stay readable
-   */
   .description {
     background-color: #fff;
     text-align: left;
@@ -470,10 +425,6 @@ footer h2 {
     }
 }
 
-/* 
-  Major breakpoint applied to most small screens and some medium ones.
-  This lays out project images in a 2-column grid, scaling up/down with screen width.
-*/
 @media screen and (max-width: 749px) {
 
   html {
@@ -524,9 +475,10 @@ footer h2 {
     line-height: 1.1666em;
   }
 
-  .project .info p:nth-child(3) a {
+  .project .info p:nth-child(3) {
     font-size: 9px;
     line-height: 2em;
+    text-transform: uppercase;
   }
 
   .one {
@@ -534,7 +486,6 @@ footer h2 {
     margin-bottom: 9px;
   }
 
-  /* individual project containers */
   .two,
   .three,
   .four,
@@ -548,7 +499,6 @@ footer h2 {
     width: 50%;
   }
 
-  /* specific project images used on project page layouts */
   .projectpage .eight,
   .projectpage .nine,
   .projectpage .ten,
@@ -558,28 +508,6 @@ footer h2 {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MEDIUM SCREENS UP */
 /******************/
 @media screen and (min-width: 750px) {
@@ -588,8 +516,11 @@ footer h2 {
     margin-left: 0.25em;
     width: 295px;
   }
-}
 
+  h1 {
+    margin-left: 9px;
+  }
+}
 
 /* MEDIUM SCREENS ONLY */
 /******************/
@@ -660,15 +591,6 @@ footer h2 {
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* RETINA SCREENS */
 /******************/
 @media screen and (-webkit-min-device-pixel-ratio: 2.0) {
@@ -678,17 +600,6 @@ footer h2 {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* BIG SCREENS */
 /***************/

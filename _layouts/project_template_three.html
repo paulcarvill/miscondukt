@@ -2,26 +2,6 @@
 layout: project
 ---
 
-<div class="one">
-  {% include picturefill.html file="1200x360" %}
-</div>
+{% include project_description.html %}
 
-<div id="container">
-
-  <div class="project nine description">
-    <div>
-      <h2>{{ page.index }}</h2>
-        <h3>{{ page.project }}</h3>
-        <h4>{{ page.client }}</h4>
-        <p>{{ page.description }}</p>
-        <p class="link"><b><a href="{{ page.link }}">{{ page.linktext }}</a></b></p>
-    </div>
-  </div>
-  
-  <div class="project eight">
-    {% include picturefill.html file="750" %}
-  </div>
-
-  <p style="clear:both">&nbsp;</p>
-
-</div>
+{% include project_image_one.html %}
