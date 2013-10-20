@@ -201,7 +201,7 @@ header p {
   line-height: 21px;
 }
 
-.project .info p:nth-child(3) a {
+.project .info p:nth-child(3) {
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
