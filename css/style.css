@@ -42,7 +42,7 @@ h1 {
   font-weight: 300;
 }
 
-html, body {
+html, body, h1 {
   font: 13.34px "chrono-web", Helvetica, Arial, sans-serif;
   font-size: small;
 }
@@ -152,8 +152,8 @@ header p {
   font-family: "chrono-web";
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
-  line-height: 1.5em;
+  font-size: 14px;
+  line-height: 1.714em;
 }
 
 .project h2 {
@@ -461,7 +461,7 @@ footer h2 {
     clear: left;
   }
 
-  .project a {
+  .project p {
     font-size: 12px;
     line-height: 1.5em;
   }
