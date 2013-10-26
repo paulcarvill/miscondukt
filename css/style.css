@@ -445,7 +445,10 @@ footer h2 {
     height: 345px; }
 
   .description p {
-    font-size: 0.8em; } }
+    font-size: 0.8em; }
+
+  .projectpage .project p {
+    line-height: 1.7em; } }
 /* RETINA SCREENS */
 /******************/
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
