@@ -1,1 +1,4 @@
 _site
+wraith/shots
+.DS_Store
+.sass-cache
