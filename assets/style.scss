@@ -36,7 +36,7 @@ html, body, div, img, p, h1, h2, h3, h4, a {
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 400;
   float: left;
 }
 
@@ -141,7 +141,7 @@ header p {
 }
 
 .project h3 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: $hugeText;
   line-height: $hugeLeading;
 }
@@ -158,20 +158,20 @@ header p {
 
 .projectpage .project b a {
   font-size: $smallText;
-  font-weight: 500;
+  font-weight: 400;
   line-height: $largeLeading;
 }
 
 .description p.link {
   margin-top: 0;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .project .info p:nth-child(2) {
   font-size: $largeText;
   line-height: $mediumLeading;
   font-style: normal;
-  font-weight: 500; 
+  font-weight: 400; 
 }
 
 .project .info p:nth-child(3) {
@@ -196,7 +196,7 @@ footer {
   background: #fff;
   padding-bottom: 12px;
   padding-top: 12px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: $smallText;
   line-height: $largeLeading;
 }
