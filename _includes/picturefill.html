@@ -1,31 +1,27 @@
 <div data-picture data-alt="{{ page.title }}">
   <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg"></div>
 
-  {% comment %} images on the home page need to scale up from 168 to about 375, so we load in the largest size {% endcomment %}
+  {% comment %}
+      images on the home page need to scale up from 168 to about 375, so we load in the largest size
+  {% endcomment %}
+  
   {% if page.path == 'home' and include.area == "header" %}
-    <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}_m.jpg" data-media="(max-width:600px)"></div>
-    <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(max-width:600px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
+    <div data-src="{{ site.baseurl }}/{{ include.file }}/{{ include.file }}_m.jpg" data-media="(max-width:600px)"></div>
+    <div data-src="{{ site.baseurl }}/{{ include.file }}/{{ include.file }}.jpg" data-media="(min-width:601px)"></div>
+    <div data-src="{{ site.baseurl }}/{{ include.file }}/{{ include.file }}.jpg" data-media="(min-width: 1008px)"></div>
+    <div data-src="{{ site.baseurl }}/{{ include.file }}/{{ include.file }}.jpg" data-media="(min-width: 1008px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
   {% elsif page.path == 'home' %}
-    <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(max-width:600px)"></div>
-    <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(max-width:600px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
+    <div data-src="{{ site.baseurl }}/{{ include.file }}/{{ include.file }}.jpg" data-media="(max-width:600px)"></div>
+    <div data-src="{{ site.baseurl }}/{{ include.file }}/{{ include.file }}.jpg" data-media="(min-width:601px)"></div>
   {% else %}
-    <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}_m.jpg" data-media="(max-width:600px)"></div>
-    <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(max-width:600px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
+    <div data-src="{{ site.baseurl }}/{{ page.path | remove:'/index.html' }}/{{ include.file }}_m.jpg" data-media="(max-width:600px)"></div>
+    <div data-src="{{ site.baseurl }}/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(max-width:600px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
+    <div data-src="{{ site.baseurl }}/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(min-width:601px)"></div>
+    <div data-src="{{ site.baseurl }}/{{ page.path | remove:'/index.html' }}/{{ include.file }}_m.jpg" data-media="(min-width: 1008px)"></div>
+    <div data-src="{{ site.baseurl }}/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(min-width: 1008px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
   {% endif %}
-
-  <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(min-width:601px)"></div>
-  <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(min-width:601px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
-
-  {% if page.path == 'home' and include.area != "header" %}
-    <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}_m.jpg" data-media="(min-width: 1008px)"></div>
-    <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(min-width: 1008px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
-  {% else %}
-    <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(min-width: 1008px)"></div>
-    <div data-src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" data-media="(min-width: 1008px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
-  {% endif %}
-
 
   <noscript>
-    <img src="{{ site.baseurl }}/img/{{ page.path | remove:'/index.html' }}/{{ include.file }}.jpg" alt="{{ page.title }}">
+    <img src="{{ site.baseurl }}/{{ include.file }}/{{ include.file }}.jpg" alt="{{ page.title }}">
   </noscript>
 </div>
