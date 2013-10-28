@@ -1,0 +1,25 @@
+body > .project img {
+margin: 0 auto;
+}
+
+#container {
+clear: both;
+}
+
+@media screen and (max-width: 600px) {
+body > .project {
+  width: 600px !important;
+  left: 50% !important;
+  margin-left: -300px !important;
+}
+
+}
+
+@media screen and (min-width: 601px) {
+body > .project {
+  width: 1200px !important;
+  left: 50% !important;
+  margin-left: -600px !important;
+}
+
+}
