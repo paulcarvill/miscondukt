@@ -69,7 +69,7 @@ a:link {
 header,
 header h1 {
   line-height: 1em;
-  font-size: 18px; }
+  font-size: 21px; }
 
 #header-inner {
   display: table-cell;
@@ -133,20 +133,23 @@ header p {
   font-weight: 400; }
 
 .project .info p:nth-child(1) {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1em;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-top: 12px; }
 
 .project .info p:nth-child(2) {
   font-size: 24px;
   line-height: 1em;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-top: 5px; }
 
 .project .info p:nth-child(3) {
   font-size: 14px;
   line-height: 1em;
   text-transform: uppercase;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-top: 6px; }
 
 .project .info {
   text-align: left;
@@ -219,6 +222,16 @@ body > .project {
 .project {
   margin-bottom: 9px; }
 
+.description h3 {
+  margin-top: 10px; }
+
+.description h4 {
+  margin-top: 2px; }
+
+.projectpage .description p {
+  margin-top: 13px;
+  line-height: 19px; }
+
 /* SMALL SCREENS */
 /*****************/
 @media screen and (max-width: 600px) {
@@ -236,9 +249,10 @@ body > .project {
     padding: 0;
     height: auto; }
 
-  /* calculate required number of copy lines * their font sizes + any leading + any padding */
-  .project .info {
-    min-height: 120px; } }
+  .projectpage .description p {
+    margin-top: 16px;
+    line-height: 24px;
+    font-size: 16px; } }
 @media screen and (min-width: 601px) {
   body > .project img {
     height: 360px;
@@ -246,9 +260,13 @@ body > .project {
     margin-left: -150%;
     margin-right: -150%; } }
 @media screen and (max-width: 749px) {
+  .project .info {
+    min-height: 130px; }
+
   #container,
   #footer-inner {
-    width: 95%; }
+    width: 100%;
+    padding: 0 9px; }
 
   #container {
     clear: left; }
@@ -292,6 +310,10 @@ body > .project {
     margin-left: 0.25em;
     width: 295px; }
 
+  /* calculate required number of copy lines * their font sizes + any leading + any padding */
+  .project .info {
+    min-height: 130px; }
+
   .description {
     padding: 2.5%; }
 
@@ -311,8 +333,7 @@ body > .project {
     margin-top: 9px; }
 
   .project {
-    width: 250px;
-    height: 350px; }
+    width: 250px; }
 
   .description {
     float: right;
@@ -323,8 +344,7 @@ body > .project {
   .project:nth-of-type(8),
   .project-image-one,
   .projectpage .project-image-three {
-    width: 375px;
-    height: 475px; }
+    width: 375px; }
 
   .projectpage .project-image-two {
     clear: left;
@@ -341,15 +361,18 @@ body > .project {
 @media screen and (max-width: 1007px) {
   footer {
     float: left;
-    width: 100%; }
+    width: 100%;
+    padding: 22px 0 22px 0; }
 
   footer p,
   footer h2 {
-    font-size: 12px;
-    font-weight: 300px; }
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px; }
 
-  footer h2 {
-    font-weight: 300; } }
+  footer p {
+    margin-top: 16px;
+    font-weight: 400; } }
 @media screen and (min-width: 1008px) {
   #container,
   .container,
@@ -381,11 +404,20 @@ body > .project {
   .project:nth-of-type(7),
   .project:nth-of-type(8),
   .project-image-one {
-    width: 504px;
-    height: 604px; }
+    width: 504px; }
 
   .eight {
     clear: left; }
+
+  footer p,
+  footer h2 {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 13px; }
+
+  footer p {
+    margin-top: 8px;
+    font-weight: 400; }
 
   #footer-inner div:nth-of-type(2) {
     margin-left: 54px; }

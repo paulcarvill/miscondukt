@@ -3,10 +3,9 @@
     <h2>{{ page.index }}</h2>
     <h3>{{ page.title }}</h3>
     <h4>{{ page.client }}</h4>
-    {% if page.clientsub %}
-     	<h4>{{ page.clientsub }}</h4>
-	{% endif %}
     <p>{{ page.description }}</p>
-    <p class="link"><b><a href="{{ page.link }}">{{ page.linktext }}</a></b></p>
+    {% if page.link %}
+    	<p class="link"><b><a href="{{ page.link }}">{{ page.linktext }}</a></b></p>
+    {% endif %}
   </div>
 </div>

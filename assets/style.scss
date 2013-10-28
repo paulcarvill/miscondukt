@@ -1,19 +1,11 @@
 $standardSpacing: 9px;
 
-$smallestText: 12px;
 $smallText: 13px;
 $mediumText: 14px;
 $largeText: 18px;
 $largerText: 24px;
-$hugeText: 36px;
 
-$smallestLeading: 1em;
-$smallLeading: 1em;
-$mediumLeading: 1em;
-$largeLeading: 1em;
-$largerLeading: 1em;
-$largestLeading: 1em;
-$hugeLeading: 1em;
+$standardLeading: 1em;
 
 $textColorOne: #000;
 $textColorTwo: #363636;
@@ -104,8 +96,8 @@ a:link {
 
 header,
 header h1 {
-  line-height: $smallLeading;
-  font-size: $largeText
+  line-height: $standardLeading;
+  font-size: 21px;
 }
 
 #header-inner {
@@ -153,7 +145,7 @@ header p {
   font-style: normal;
   font-weight: 300;
   font-size: $mediumText;
-  line-height: $largeLeading;
+  line-height: $standardLeading;
 }
 
 .project h2 {
@@ -162,25 +154,25 @@ header p {
 
 .project h3 {
   font-weight: 400;
-  font-size: $hugeText;
-  line-height: $hugeLeading;
+  font-size: 36px;
+  line-height: $standardLeading;
 }
 
 .project h4 {
   font-size: $largeText;
-  line-height: $largeLeading;
+  line-height: $standardLeading;
 }
 
 .projectpage .project p {
   font-size: $smallText;
-  line-height: $largeLeading;
+  line-height: $standardLeading;
 
 }
 
 .projectpage .project b a {
   font-size: $smallText;
   font-weight: 400;
-  line-height: $largeLeading;
+  line-height: $standardLeading;
 }
 
 .description p.link {
@@ -189,22 +181,25 @@ header p {
 }
 
 .project .info p:nth-child(1) {
-  font-size: $largeText;
-  line-height: $largeLeading;
+  font-size: 16px;
+  line-height: 1em;
   font-weight: 300;
+  margin-top: 12px;
 }
 
 .project .info p:nth-child(2) {
-  font-size: $largerText;
-  line-height: $largeLeading;
+  font-size: 24px;
+  line-height: 1em;
   font-weight: 400;
+  margin-top: 5px;
 }
 
 .project .info p:nth-child(3) {
-  font-size: $mediumText;
-  line-height: $mediumLeading;
+  font-size: 14px;
+  line-height: 1em;
   text-transform: uppercase;
   font-weight: 300;
+  margin-top: 6px;
 }
 
 .project .info {
@@ -224,7 +219,7 @@ footer {
   padding-top: 12px;
   font-weight: 400;
   font-size: $smallText;
-  line-height: $largeLeading;
+  line-height: $standardLeading;
 }
 
 /****************************/
@@ -293,6 +288,20 @@ body > .project {
   margin-bottom: $standardSpacing;
 }
 
+.description h3 {
+    margin-top: 10px;    
+  }
+
+  .description h4 {
+    margin-top: 2px;    
+  }
+
+  .projectpage .description p {
+    margin-top: 13px;   
+    line-height: 19px; 
+  }
+
+
 /* SMALL SCREENS */
 /*****************/
 @media screen and (max-width: 600px) {
@@ -313,10 +322,12 @@ body > .project {
     height: auto;
   }
 
-  /* calculate required number of copy lines * their font sizes + any leading + any padding */
-  .project .info {
-    min-height: ($largeText * 4) + ($largerText * 2);
+  .projectpage .description p {
+    margin-top: 16px;   
+    line-height: 24px;
+    font-size: 16px;
   }
+
 }
 
 @media screen and (min-width: 601px) {
@@ -331,9 +342,14 @@ body > .project {
 
 @media screen and (max-width: 749px) {
 
+  .project .info {
+    min-height: 130px;
+  }
+
   #container,
   #footer-inner {
-    width: 95%;
+    width: 100%;
+    padding: 0 9px;
   }
 
   #container {
@@ -361,7 +377,7 @@ body > .project {
 
   .project p {
     font-size: $largerText;
-    line-height: $largestLeading;
+    line-height: $standardLeading;
   }
 
   .project {
@@ -387,6 +403,11 @@ body > .project {
     float: left;
     margin-left: 0.25em;
     width: 295px;
+  }
+
+  /* calculate required number of copy lines * their font sizes + any leading + any padding */
+  .project .info {
+    min-height: 130px;
   }
 
   .description {
@@ -417,7 +438,6 @@ body > .project {
 
   .project {
     width: 250px;
-    height: 350px;
   }
 
   .description {
@@ -431,7 +451,6 @@ body > .project {
   .project-image-one,
   .projectpage .project-image-three {
     width: 375px;
-    height: 475px;
   }
 
   .projectpage .project-image-two {
@@ -455,16 +474,19 @@ body > .project {
     footer {
       float: left;
       width: 100%;
+      padding: 22px 0 22px 0;
     }
 
     footer p,
     footer h2 {
-      font-size: $smallestText;
-      font-weight: 300px;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 18px;
     }
 
-    footer h2 {
-      font-weight: 300;
+    footer p {
+      margin-top: 16px;
+      font-weight: 400;
     }
 }
 
@@ -508,11 +530,22 @@ body > .project {
   .project:nth-of-type(8),
   .project-image-one {
     width: 504px;
-    height: 604px;
   }
 
   .eight {
     clear: left;
+  }
+
+  footer p,
+  footer h2 {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 13px;
+  }
+
+  footer p {
+    margin-top: 8px;
+    font-weight: 400;
   }
 
   #footer-inner div:nth-of-type(2) {
@@ -525,4 +558,6 @@ body > .project {
     padding: 32px;
     float: right;
   }
+
+  
 }
