@@ -1,4 +1,7 @@
 /* Global Reset */
+* {
+  box-sizing: border-box; }
+
 html, body {
   height: 100%; }
 
@@ -15,6 +18,20 @@ html, body, div, img, p, h1, h2, h3, h4, a {
 h1 {
   font-weight: 400;
   float: left; }
+
+@font-face {
+  font-family: 'colfax-web';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/ColfaxWebLight.eot");
+  src: url("../fonts/ColfaxWebLight.eot?#iefix") format("embedded-opentype"), url("../fonts/ColfaxWebLight.woff") format("woff"); }
+
+@font-face {
+  font-family: 'colfax-web';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ColfaxWebRegular.eot");
+  src: url("../fonts/ColfaxWebRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ColfaxWebRegular.woff") format("woff"); }
 
 html, body, h1 {
   font-family: "colfax-web", Helvetica, Arial, sans-serif;
@@ -51,15 +68,12 @@ a:link {
 
 header,
 header h1 {
-  line-height: 18px;
+  line-height: 1em;
   font-size: 18px; }
 
 #header-inner {
   display: table-cell;
   vertical-align: middle; }
-
-#container {
-  min-height: 720px; }
 
 .container {
   height: 63px; }
@@ -79,10 +93,11 @@ header p {
 /****************************/
 .project {
   float: left;
-  width: 240px;
-  height: auto;
   position: relative; }
 
+/****************************/
+/* mostly type */
+/****************************/
 .project p,
 .project h2,
 .project h3,
@@ -90,7 +105,7 @@ header p {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  line-height: 24px; }
+  line-height: 1em; }
 
 .project h2 {
   font-size: 24px; }
@@ -98,40 +113,44 @@ header p {
 .project h3 {
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px; }
+  line-height: 1em; }
 
 .project h4 {
   font-size: 18px;
-  line-height: 24px; }
+  line-height: 1em; }
 
 .projectpage .project p {
   font-size: 13px;
-  line-height: 24px; }
+  line-height: 1em; }
 
 .projectpage .project b a {
   font-size: 13px;
   font-weight: 400;
-  line-height: 24px; }
+  line-height: 1em; }
 
 .description p.link {
   margin-top: 0;
   font-weight: 400; }
 
-.project .info p:nth-child(2) {
+.project .info p:nth-child(1) {
   font-size: 18px;
-  line-height: 21px;
-  font-style: normal;
+  line-height: 1em;
+  font-weight: 300; }
+
+.project .info p:nth-child(2) {
+  font-size: 24px;
+  line-height: 1em;
   font-weight: 400; }
 
 .project .info p:nth-child(3) {
-  font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase; }
+  font-size: 14px;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-weight: 300; }
 
 .project .info {
   text-align: left;
-  padding: 0 5px;
-  min-height: 70px; }
+  padding: 0 5px 0 0; }
 
 .project img {
   width: 100%; }
@@ -144,8 +163,11 @@ footer {
   padding-top: 12px;
   font-weight: 400;
   font-size: 13px;
-  line-height: 24px; }
+  line-height: 1em; }
 
+/****************************/
+/* end of type */
+/****************************/
 footer a,
 footer a:visited,
 footer a:active {
@@ -163,9 +185,7 @@ footer h2 {
 .description {
   background-color: #fff;
   height: auto;
-  text-align: left;
-  padding: 15px;
-  width: 474px; }
+  text-align: left; }
 
 .description h2,
 .description h3,
@@ -181,7 +201,7 @@ footer h2 {
   height: auto; }
 
 .projectpage .browser-screenshot {
-  width: 795px;
+  width: 100%;
   height: auto; }
 
 .projectpage .project-image-three,
@@ -189,46 +209,44 @@ footer h2 {
   width: 504px;
   height: auto; }
 
-.one {
+/* first project only - the big header image on every screen */
+body > .project {
   text-align: center;
   overflow: hidden;
-  margin-bottom: 9px;
-  height: 360px; }
+  height: 360px;
+  width: 100%; }
+
+.project {
+  margin-bottom: 9px; }
 
 /* SMALL SCREENS */
 /*****************/
 @media screen and (max-width: 600px) {
-  .one {
+  body > .project {
     height: 180px; }
 
-  .one img {
+  body > .project img {
     width: 600px;
     height: 180px;
     margin-left: -150%;
     margin-right: -150%; }
 
   .description {
-    background-color: #fff;
     text-align: left;
     padding: 0;
-    width: 95%;
     height: auto; }
 
+  /* calculate required number of copy lines * their font sizes + any leading + any padding */
   .project .info {
-    min-height: 128px; } }
+    min-height: 120px; } }
 @media screen and (min-width: 601px) {
-  .one img {
+  body > .project img {
     height: 360px;
     width: 1200px;
     margin-left: -150%;
     margin-right: -150%; } }
 @media screen and (max-width: 749px) {
-  html {
-    background: #fff; }
-
   #container,
-  .container,
-  #header-inner,
   #footer-inner {
     width: 95%; }
 
@@ -236,53 +254,26 @@ footer h2 {
     clear: left; }
 
   .container {
+    width: auto;
     height: auto; }
 
   header {
     margin-top: 9px;
     margin-bottom: 9px;
     width: 100%;
-    height: 24px; }
-
-  #header-inner {
-    width: 100%; }
+    height: 44px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 2.5%; }
 
   .project:nth-child(odd) {
     clear: left; }
 
-  .project {
-    margin-bottom: 9px; }
-
   .project p {
     font-size: 24px;
-    line-height: 36px; }
+    line-height: 1em; }
 
-  .project .info {
-    padding: 4px 5px 0 5px;
-    background-color: #f2f2f2; }
-
-  .project .info p:nth-child(2) {
-    line-height: 28px; }
-
-  .project .info p:nth-child(3) {
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase; }
-
-  .one {
-    width: 100%;
-    margin-bottom: 9px; }
-
-  .two,
-  .three,
-  .four,
-  .five,
-  .six,
-  .seven,
-  .eight,
-  .nine,
-  .ten,
-  .eleven {
+  .project {
     width: 50%; }
 
   .projectpage .project-image-one,
@@ -291,12 +282,18 @@ footer h2 {
   .projectpage .browser-screenshot,
   .description {
     width: 100%;
-    height: auto; } }
+    height: auto; }
+
+  .description {
+    padding: 2.5%; } }
 @media screen and (min-width: 750px) {
   #footer-inner div {
     float: left;
     margin-left: 0.25em;
     width: 295px; }
+
+  .description {
+    padding: 2.5%; }
 
   h1 {
     margin-left: 9px; } }
@@ -314,27 +311,20 @@ footer h2 {
     margin-top: 9px; }
 
   .project {
-    margin-bottom: 9px; }
-
-  .one {
-    float: right;
-    width: 100%; }
-
-  .two,
-  .three,
-  .four,
-  .five,
-  .six,
-  .seven,
-  .ten,
-  .eleven {
     width: 250px;
     height: 350px; }
 
   .description {
     float: right;
-    width: 345px;
-    height: 345px; }
+    width: 375px;
+    height: 375px; }
+
+  .project:nth-of-type(7),
+  .project:nth-of-type(8),
+  .project-image-one,
+  .projectpage .project-image-three {
+    width: 375px;
+    height: 475px; }
 
   .projectpage .project-image-two {
     clear: left;
@@ -345,13 +335,6 @@ footer h2 {
   .browser-screenshot {
     width: 100%;
     height: auto; }
-
-  .eight,
-  .nine,
-  .project-image-one,
-  .projectpage .project-image-three {
-    width: 375px;
-    height: 475px; }
 
   .projectpage .project p {
     line-height: 1.7em; } }
@@ -389,15 +372,14 @@ footer h2 {
   #container.stickypadding {
     margin-top: 369px; }
 
-  .one {
-    width: 100%;
+  body > .project {
     z-index: 100; }
 
-  .one img {
+  body > .project img {
     max-width: 1200px; }
 
-  .eight,
-  .nine,
+  .project:nth-of-type(7),
+  .project:nth-of-type(8),
   .project-image-one {
     width: 504px;
     height: 604px; }
@@ -409,7 +391,7 @@ footer h2 {
     margin-left: 54px; }
 
   .description {
-    width: 440px;
-    height: 440px;
+    width: 504px;
+    height: 504px;
     padding: 32px;
     float: right; } }
