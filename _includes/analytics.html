@@ -1,17 +1,27 @@
 <script>
-    if ( !Modernizr.touch ) {
-      var header = document.querySelector('body > .project');
-      var container = document.querySelector('#container');
-      var origOffsetY = header.offsetHeight;
-      function onScroll(e) {
-        if (window.scrollY >= 360) {
-          header.classList.add('sticky');
-          container.classList.add('stickypadding');
-        } else {
-          header.classList.remove('sticky');
-          container.classList.remove('stickypadding');
-        }
+  if ( !Modernizr.touch ) {
+    var header = document.querySelector('body > .project');
+    var container = document.querySelector('#container');
+    var origOffsetY = header.offsetHeight;
+    function onScroll(e) {
+      if (window.scrollY >= 360) {
+        header.classList.add('sticky');
+        container.classList.add('stickypadding');
+      } else {
+        header.classList.remove('sticky');
+        container.classList.remove('stickypadding');
       }
-      document.addEventListener('scroll', onScroll);
     }
-  </script>
+    document.addEventListener('scroll', onScroll);
+  }
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35485191-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
