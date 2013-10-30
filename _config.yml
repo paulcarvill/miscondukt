@@ -1,2 +1,42 @@
 baseurl: /suki-rai.com
 
+projects:
+  - title: Choose Interesting
+    directory: 'choose-interesting'
+    client: Grolsch
+  - title: Unknown Disorder
+    directory: 'unknown-disorder'
+    client: OFFF
+  - title: Apocalypse
+    directory: 'apocalypse'
+    client: Colours Magazine
+  - title: Afrikan
+    directory: 'afrikan'
+    client: Afrikan boy
+  - title: Sing Your Heart Out
+    directory: 'sing-your-heart-out'
+    client: Europcar
+  - title: Become Electric
+    directory: 'become-electric'
+    client: BMW
+  - title: I Hear You
+    directory: 'i-hear-you'
+    client: V&A
+  - title: The Shadow Line
+    directory: 'the-shadow-line'
+    client: BBC
+  - title: Wihtechapel
+    directory: 'whitechapel'
+    client: ITV
+  - title: Is the i3 right for you?
+    directory: 'is-the-i3-right-for-you'
+    client: BMW
+  - title: Making Energy Easier
+    directory: 'making-energy-easier'
+    client: E.ON
+  - title: PS Postcards
+    directory: 'ps-postcards'
+    client: Ocean Labs
+  - title: Claridges Hotel
+    directory: 'claridges-hotel'
+    client: Maybourne Group

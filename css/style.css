@@ -203,14 +203,24 @@ footer h2 {
 .projectpage .project-image-three {
   height: auto; }
 
-.projectpage .browser-screenshot {
+.template-one .img2 {
   width: 100%;
   height: auto; }
+
+.project-image-two iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .projectpage .project-image-three,
 .projectpage .project-image-two {
   width: 504px;
   height: auto; }
+
+.template-one .project-image-two {
+  width: 750px; }
 
 /* first project only - the big header image on every screen */
 body > .project {
@@ -297,7 +307,6 @@ body > .project {
   .projectpage .project-image-one,
   .projectpage .project-image-two,
   .projectpage .project-image-three,
-  .projectpage .browser-screenshot,
   .description {
     width: 100%;
     height: auto; }
@@ -350,10 +359,6 @@ body > .project {
     clear: left;
     float: left;
     width: 50%;
-    height: auto; }
-
-  .browser-screenshot {
-    width: 100%;
     height: auto; } }
 @media screen and (max-width: 1007px) {
   footer {
@@ -369,7 +374,13 @@ body > .project {
 
   footer p {
     margin-top: 16px;
-    font-weight: 400; } }
+    font-weight: 400; }
+
+  .template-one .project-image-two {
+    width: 100%; }
+
+  .template-one .project-image-two.video {
+    padding-bottom: 56.35%; } }
 @media screen and (min-width: 1008px) {
   #container,
   .container,
@@ -423,4 +434,7 @@ body > .project {
     width: 504px;
     height: 504px;
     padding: 32px;
-    float: right; } }
+    float: right; }
+
+  .project-image-two.video {
+    height: 422px; } }

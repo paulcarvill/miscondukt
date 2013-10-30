@@ -4,118 +4,29 @@ title: home
 path: home
 ---
 
-  <div class="project">
-    {% include homepage_picturefill.html file="choose-interesting" area="header" %}
-  </div>
+{% for project in site.projects %}
+  
+  {% if forloop.first %}
+    
+    <div class="project">
+      {% include homepage_picturefill.html area="header" %}
+    </div>
 
-  <div id="container">
+    <div id="container">
 
+  {% else %}
+    
     <div class="project">
-      {% include homepage_picturefill.html file="unknown-disorder" %}
+      {% include homepage_picturefill.html %}
       <div class="info">
-        <p>/02</p>
-        <p><a href="unknown-disorder">Unknown Disorder</a></p>
-        <p>OFFF</p>
-      </div>
-    </div>
-        
-    <div class="project">
-      {% include homepage_picturefill.html file="apocalypse" %}
-      <div class="info">
-        <p>/03</p>
-        <p><a href="apocalypse">Apocalypse</a></p>
-        <p>Colors Magazine</p>
-      </div>
-    </div>
-        
-    <div class="project">
-      {% include homepage_picturefill.html file="afrikan" %}
-      <div class="info">
-        <p>/04</p>
-        <p><a href="afrikan">Afrikan</a></p>
-        <p>Afrikan Boy</p>
-      </div>
-    </div>
-        
-    <div class="project">
-      {% include homepage_picturefill.html file="sing-your-heart-out" %}
-      <div class="info">
-        <p>/05</p>
-        <p><a href="sing-your-heart-out">Sing your heart out</a></p>
-        <p>Europcar</p>
-      </div>
-    </div>
-        
-    <div class="project">
-      {% include homepage_picturefill.html file="become-electric" %}
-      <div class="info">
-        <p>/06</p>
-        <p><a href="become-electric">Become Electric</a></p>
-        <p>BMW</p>
-      </div>
-    </div>
-        
-    <div class="project">
-      {% include homepage_picturefill.html file="i-hear-you" %}
-      <div class="info">
-        <p>/07</p>
-        <p><a href="i-hear-you">I Hear You</a></p>
-        <p>V&A</p>
-      </div>
-    </div>
-        
-    <div class="project">
-      {% include homepage_picturefill.html file="the-shadow-line" %}
-      <div class="info">
-        <p>/08</p>
-        <p><a href="the-shadow-line">The Shadow Line</a></p>
-        <p>BBC</p>
-      </div>
-    </div>
-        
-    <div class="project">
-      {% include homepage_picturefill.html file="whitechapel" %}
-      <div class="info">
-        <p>/09</p>
-        <p><a href="whitechapel">Whitechapel</a></p>
-        <p>BBC</p>
-      </div>
-    </div>
-        
-    <div class="project">
-      {% include homepage_picturefill.html file="is-the-i3-right-for-you" %}
-      <div class="info">
-        <p>/10</p>
-        <p><a href="is-the-i3-right-for-you">Is the i3 right for you?</a></p>
-        <p>BMW</p>
-      </div>
-    </div>
-        
-    <div class="project">
-      {% include homepage_picturefill.html file="making-energy-easier" %}
-      <div class="info">
-        <p>/11</p>
-        <p><a href="making-energy-easier">Making energy easier</a></p>
-        <p>E.ON</p>
+        <p>/{{ forloop.index }}</p>
+        <p><a href="{{ project.directory }}">{{ project.title }}</a></p>
+        <p>{{ project.client }}</p>
       </div>
     </div>
 
-    <div class="project">
-      {% include homepage_picturefill.html file="ps-postcards" %}
-      <div class="info">
-        <p>/12</p>
-        <p><a href="ps-postcards">PS Postcards</a></p>
-        <p>Ocean Labs</p>
-      </div>
-    </div>
+  {% endif %}
 
-    <div class="project">
-      {% include homepage_picturefill.html file="claridges-hotel" %}
-      <div class="info">
-        <p>/13</p>
-        <p><a href="claridges-hotel">Claridges Hotel</a></p>
-        <p>Maybourne Group</p>
-      </div>
-    </div>
+{% endfor %}
 
-  </div>
+    </div>

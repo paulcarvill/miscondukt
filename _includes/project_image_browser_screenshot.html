@@ -1,3 +1,7 @@
-<div class="project browser-screenshot">
-  {% include picturefill.html file="browser-screenshot" %}
+<div class="project browser-screenshot {% if page.video %}video{% endif %}">
+  {% if page.video %}
+  	<iframe src="//player.vimeo.com/video/50008240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  {% else %}
+  	{% include picturefill.html file="browser-screenshot" %}
+  {% endif %}
 </div>
