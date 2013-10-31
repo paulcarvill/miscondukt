@@ -1,6 +1,6 @@
 <div class="project description">
   <div>
-    <h2>{{ page.index }}</h2>
+    <h2>/{% if page.index < 10 %}0{% endif %}{{ page.index }}</h2>
     <h3>{{ page.title }}</h3>
     <h4>{{ page.client }}</h4>
     <p>{{ page.description }}</p>

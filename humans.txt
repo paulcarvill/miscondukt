@@ -1,0 +1,17 @@
+/* TEAM */
+	
+	Designer: Suki Rai
+	Contact: suki@suki-rai.com
+	Twitter: @miscondukt
+	From: London, UK
+
+	Developer: Paul Carvill
+	Contact: paul@paulcarvill.com
+	Twitter: @paulcarvill
+	Site: http://www.paulcarvill.com
+	From: London, UK
+
+/* SITE */
+
+	Software: SASS, Picturefill, Modernizr, Matchmedia, Jekyll, Github Pages
+	Source code: https://github.com/paulcarvill/suki-rai.com

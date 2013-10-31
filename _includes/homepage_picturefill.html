@@ -1,3 +1,3 @@
-<a href="{{ project.directory }}" title="{{ project.title }}">
+<a href="{{ p.path | remove:'/index.html' }}" title="{{ p.title }}">
   {% include picturefill.html %}
 </a>

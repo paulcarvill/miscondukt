@@ -4,29 +4,47 @@ title: home
 path: home
 ---
 
-{% for project in site.projects %}
+{% comment %}
+
+  What we do here is get a list of proejcts in a particular order, defined in each project's front-matter using an 'index' property. This is becasue Jekyll's default site.pages order is alphabetical.
   
-  {% if forloop.first %}
-    
-    <div class="project">
-      {% include homepage_picturefill.html area="header" %}
-    </div>
+  First we loop through the number of projects we want, in index order.
+{% endcomment %}
 
-    <div id="container">
+{% for index in (1..site.pages.size) %}
 
-  {% else %}
-    
-    <div class="project">
-      {% include homepage_picturefill.html %}
-      <div class="info">
-        <p>/{{ forloop.index }}</p>
-        <p><a href="{{ project.directory }}">{{ project.title }}</a></p>
-        <p>{{ project.client }}</p>
+  {% comment %}
+    Then we loop through all our site's pages (this will be alphabetical), looking for the next project in our index order.
+  {% endcomment %}
+
+  {% for p in site.pages %}
+
+    {% comment %}
+      Find the index which matches the current loop index.
+      Note that we are avle to ignore the 'home' and 'js' pages, because we have not given them an 'index' property in their front matter.
+    {% endcomment %}
+
+    {% if p.index == 1 and p.index == index %}
+
+      <div class="project">
+        {% include homepage_picturefill.html area="header" %}
       </div>
-    </div>
 
-  {% endif %}
+      <div id="container">
 
+    {% elsif p.index == index '%}
+
+      <div class="project">
+        {% include homepage_picturefill.html %}
+        <div class="info">
+          <p>/{% if p.index < 10 %}0{% endif %}{{ p.index }}</p>
+          <p><a href="{{ p.path | remove:'/index.html' }}">{{ p.title }}</a></p>
+          <p>{{ p.client }}</p>
+        </div>
+      </div>
+
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
     </div>
