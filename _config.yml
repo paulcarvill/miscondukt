@@ -1,5 +1,3 @@
-baseurl: 
-
 projects:
   - title: Choose Interesting
     directory: 'choose-interesting'

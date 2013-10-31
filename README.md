@@ -16,8 +16,8 @@ This Rake task runs the Jekyll server, as well as watching for changes to SCSS.
 
 ## 1. Choose a layout (1, 2 or 3):
 
-![image](img/template1.jpg)
-![image](img/template2.jpg)
+![image](img/template1.jpg)&nbsp;&nbsp;
+![image](img/template2.jpg)&nbsp;&nbsp;
 ![image](img/template3.jpg)
 
 <br /><br />
