@@ -80,7 +80,7 @@ The name of the folder will be the name of the URL the project is served at. E.g
 
 ### LICENSING
 
-The site design and code are licensed separately under Creative Commons and MIT licenses. Other stuff is licensed under its own terms (fonts, JavaScript libraries) or used under a "fair use" policy (client project images). See [http://suki-rai.com/about](http://suki-rai.com/about) for more details.
+The site design and code are licensed separately under Creative Commons and MIT licenses. Other stuff is licensed under its own terms (fonts, JavaScript libraries) or used under a "fair use" policy (client project images). See [http://suki-rai.com/license](http://suki-rai.com/license) for more details.
 
 <br /><br />
 
