@@ -188,7 +188,7 @@ header p {
 }
 
 .project .info p:nth-child(2) {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1em;
   font-weight: 400;
   margin-top: 5px;
@@ -234,12 +234,6 @@ footer a:active {
 
 footer h2 {
   font-weight: 300;
-}
-
-#footer-inner div:nth-of-type(3) {
-  clear: left;
-  display: block;
-  width: auto;
 }
 
 /* Project pages */
@@ -407,13 +401,21 @@ body > .project {
   .description {
     padding: 2.5%
   }
+
+  #footer-inner div {
+    margin-bottom: 48px;
+  }
+
+  #footer-inner div:nth-child(3),
+  #footer-inner div:nth-child(4) {
+    margin-bottom: 9px;
+  }
 }
 
 @media screen and (min-width: 750px) {
   #footer-inner div {
     float: left;
-    margin-left: 0.25em;
-    width: 295px;
+    width: 33%;
   }
 
   /* calculate required number of copy lines * their font sizes + any leading + any padding */
@@ -427,6 +429,10 @@ body > .project {
 
   h1 {
     margin-left: $standardSpacing;
+  }
+
+  #footer-inner div:nth-of-type(3) {
+    text-align: right;
   }
 }
 
@@ -556,10 +562,6 @@ body > .project {
   footer p {
     margin-top: 8px;
     font-weight: 400;
-  }
-
-  #footer-inner div:nth-of-type(2) {
-    margin-left: 54px;
   }
 
   .description {
