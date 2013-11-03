@@ -78,6 +78,12 @@ The name of the folder will be the name of the URL the project is served at. E.g
 
 <br /><br />
 
+### LICENSING
+
+The site design and code are licensed separately under Creative Commons and MIT licenses. Other stuff is licensed under its own terms (fonts, JavaScript libraries) or used under a "fair use" policy (client project images). See [http://suki-rai.com/about](http://suki-rai.com/about) for more details.
+
+<br /><br />
+
 ### TESTING
 
 There's a basic visual test setup which you can use to compare visual output from your local Jekyll server and the live code on Github Pages. It uses Wraith from the BBC: [https://github.com/BBC-News/wraith
