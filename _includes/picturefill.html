@@ -14,7 +14,7 @@
   {% endif %}
 
   {% comment %}
-    This section deals with 
+    This section deals with the header image on the homepage
   {% endcomment %}
   {% if page.path == 'home' and include.area == "header" %}
     <div data-src="/{{ p.path | remove:'/index.html' }}/homepage_m.jpg" data-media="(max-width:600px)"></div>
@@ -22,8 +22,17 @@
     <div data-src="/{{ p.path | remove:'/index.html' }}/homepage.jpg" data-media="(min-width:601px)"></div>
     <div data-src="/{{ p.path | remove:'/index.html' }}/homepage.jpg" data-media="(min-width: 1008px)"></div>
     <div data-src="/{{ p.path | remove:'/index.html' }}/homepage.jpg" data-media="(min-width: 1008px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
+  
+  {% comment %}
+    This section deals with the header image on project pages
+  {% endcomment %} 
+  {% elsif include.area == "header" %}
+    <div data-src="{{ include.file }}_m.jpg" data-media="(max-width:600px)"></div>
+    <div data-src="{{ include.file }}.jpg" data-media="(max-width:600px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
+    <div data-src="{{ include.file }}.jpg" data-media="(min-width:601px)"></div>
+    <div data-src="{{ include.file }}.jpg" data-media="(min-width: 1008px) and (-webkit-min-device-pixel-ratio: 2.0)"></div>
+  
   {% elsif page.path == 'home' %}
-
     {% comment %}
       This section deals with the standard square project images on the homepage
     {% endcomment %}
@@ -31,7 +40,6 @@
     <div data-src="/{{ p.path | remove:'/index.html' }}/homepage.jpg" data-media="(min-width:601px)"></div>
   
   {% else %}
-
     {% comment %}
       This section deals with all images on project pages
     {% endcomment %}
