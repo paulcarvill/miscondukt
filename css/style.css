@@ -16,6 +16,7 @@ html, body, div, img, p, h1, h2, h3, h4, a {
   margin: 0; }
 
 h1 {
+  font-size: 21px;
   font-weight: 400;
   float: left; }
 
@@ -33,7 +34,7 @@ h1 {
   src: url("../fonts/ColfaxWebRegular.eot");
   src: url("../fonts/ColfaxWebRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ColfaxWebRegular.woff") format("woff"); }
 
-html, body, h1 {
+html, body {
   font-family: "colfax-web", Helvetica, Arial, sans-serif;
   font-size: 16px; }
 
@@ -57,7 +58,7 @@ header {
 a,
 a:visited,
 a:active {
-  color: #363636;
+  color: black;
   text-decoration: none; }
 
 a:hover {
@@ -65,11 +66,6 @@ a:hover {
 
 a:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-
-header,
-header h1 {
-  line-height: 1em;
-  font-size: 21px; }
 
 #header-inner {
   display: table-cell;
@@ -98,35 +94,33 @@ header p {
 /****************************/
 /* mostly type */
 /****************************/
+p, h1, h2, h3, h4, a {
+  line-height: 1em; }
+
 .project p,
 .project h2,
 .project h3,
 .project h4 {
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 1em; }
+  font-size: 14px; }
 
 .project h2 {
   font-size: 24px; }
 
 .project h3 {
   font-weight: 400;
-  font-size: 36px;
-  line-height: 1em; }
+  font-size: 36px; }
 
 .project h4 {
-  font-size: 18px;
-  line-height: 1em; }
+  font-size: 18px; }
 
 .projectpage .project p {
-  font-size: 13px;
-  line-height: 1em; }
+  font-size: 13px; }
 
 .projectpage .project b a {
   font-size: 13px;
-  font-weight: 400;
-  line-height: 1em; }
+  font-weight: 400; }
 
 .description p.link {
   margin-top: 0;
@@ -134,19 +128,16 @@ header p {
 
 .project .info p:nth-child(1) {
   font-size: 16px;
-  line-height: 1em;
   font-weight: 300;
   margin-top: 12px; }
 
 .project .info p:nth-child(2) {
   font-size: 22px;
-  line-height: 1em;
   font-weight: 400;
   margin-top: 5px; }
 
 .project .info p:nth-child(3) {
   font-size: 14px;
-  line-height: 1em;
   text-transform: uppercase;
   font-weight: 300;
   margin-top: 6px; }
@@ -165,8 +156,7 @@ footer {
   padding-bottom: 12px;
   padding-top: 12px;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 1em; }
+  font-size: 13px; }
 
 /****************************/
 /* end of type */
@@ -293,8 +283,7 @@ body > .project {
     clear: left; }
 
   .project p {
-    font-size: 24px;
-    line-height: 1em; }
+    font-size: 24px; }
 
   .project {
     width: 50%; }
@@ -373,8 +362,7 @@ body > .project {
   footer p,
   footer h2 {
     font-size: 18px;
-    font-weight: 300;
-    line-height: 18px; }
+    font-weight: 300; }
 
   footer p {
     margin-top: 16px;
@@ -418,14 +406,10 @@ body > .project {
   .project-image-one {
     width: 504px; }
 
-  .eight {
-    clear: left; }
-
   footer p,
   footer h2 {
     font-size: 13px;
-    font-weight: 300;
-    line-height: 13px; }
+    font-weight: 300; }
 
   footer p {
     margin-top: 8px;

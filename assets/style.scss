@@ -8,7 +8,6 @@ $largerText: 24px;
 $standardLeading: 1em;
 
 $textColorOne: #000;
-$textColorTwo: #363636;
 $textColorThree: #555;
 $textColorFour: #aaa;
 
@@ -32,6 +31,7 @@ html, body, div, img, p, h1, h2, h3, h4, a {
 }
 
 h1 {
+  font-size: 21px;
   font-weight: 400;
   float: left;
 }
@@ -54,7 +54,7 @@ h1 {
        url('../fonts/ColfaxWebRegular.woff') format('woff');
 }
 
-html, body, h1 {
+html, body {
   font-family: "colfax-web", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
@@ -82,7 +82,7 @@ header {
 a,
 a:visited,
 a:active {
-  color: $textColorTwo;
+  color: $textColorOne;
   text-decoration: none;
 }
 
@@ -92,12 +92,6 @@ a:hover {
 
 a:link {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-header,
-header h1 {
-  line-height: $standardLeading;
-  font-size: 21px;
 }
 
 #header-inner {
@@ -138,6 +132,10 @@ header p {
 /* mostly type */
 /****************************/
 
+p, h1, h2, h3, h4, a {
+  line-height: $standardLeading;
+}
+
 .project p,
 .project h2,
 .project h3,
@@ -145,7 +143,6 @@ header p {
   font-style: normal;
   font-weight: 300;
   font-size: $mediumText;
-  line-height: $standardLeading;
 }
 
 .project h2 {
@@ -155,24 +152,19 @@ header p {
 .project h3 {
   font-weight: 400;
   font-size: 36px;
-  line-height: $standardLeading;
 }
 
 .project h4 {
   font-size: $largeText;
-  line-height: $standardLeading;
 }
 
 .projectpage .project p {
   font-size: $smallText;
-  line-height: $standardLeading;
-
 }
 
 .projectpage .project b a {
   font-size: $smallText;
   font-weight: 400;
-  line-height: $standardLeading;
 }
 
 .description p.link {
@@ -182,21 +174,18 @@ header p {
 
 .project .info p:nth-child(1) {
   font-size: 16px;
-  line-height: 1em;
   font-weight: 300;
   margin-top: 12px;
 }
 
 .project .info p:nth-child(2) {
   font-size: 22px;
-  line-height: 1em;
   font-weight: 400;
   margin-top: 5px;
 }
 
 .project .info p:nth-child(3) {
   font-size: 14px;
-  line-height: 1em;
   text-transform: uppercase;
   font-weight: 300;
   margin-top: 6px;
@@ -219,7 +208,6 @@ footer {
   padding-top: 12px;
   font-weight: 400;
   font-size: $smallText;
-  line-height: $standardLeading;
 }
 
 /****************************/
@@ -295,17 +283,17 @@ body > .project {
 }
 
 .description h3 {
-    margin-top: 10px;    
-  }
+  margin-top: 10px;    
+}
 
-  .description h4 {
-    margin-top: 2px;    
-  }
+.description h4 {
+  margin-top: 2px;    
+}
 
-  .projectpage .description p {
-    margin-top: 13px;   
-    line-height: 19px; 
-  }
+.projectpage .description p {
+  margin-top: 13px;   
+  line-height: 19px; 
+}
 
 
 /* SMALL SCREENS */
@@ -383,7 +371,6 @@ body > .project {
 
   .project p {
     font-size: $largerText;
-    line-height: $standardLeading;
   }
 
   .project {
@@ -489,7 +476,6 @@ body > .project {
     footer h2 {
       font-size: 18px;
       font-weight: 300;
-      line-height: 18px;
     }
 
     footer p {
@@ -548,15 +534,10 @@ body > .project {
     width: 504px;
   }
 
-  .eight {
-    clear: left;
-  }
-
   footer p,
   footer h2 {
-    font-size: 13px;
+    font-size: $smallText;
     font-weight: 300;
-    line-height: 13px;
   }
 
   footer p {
