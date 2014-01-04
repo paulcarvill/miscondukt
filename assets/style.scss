@@ -295,6 +295,17 @@ body > .project {
   line-height: 19px; 
 }
 
+.ximg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background-image: url(../img/glitch.gif);
+}
+
+.project a:hover .ximg { 
+  display: block;
+}
 
 /* SMALL SCREENS */
 /*****************/
@@ -308,6 +319,12 @@ body > .project {
     height: 180px;
     margin-left: -150%;
     margin-right: -150%;
+  }
+
+  body > .project img.ximg {
+    margin: auto;
+    width: 100%;
+    height: 100%
   }
 
   .description {
@@ -331,6 +348,12 @@ body > .project {
     width: 1200px;
     margin-left: -150%;
     margin-right: -150%;
+  }
+
+  body > .project img.ximg {
+    margin: auto;
+    width: 100%;
+    height: 100%
   }
 }
 
@@ -526,6 +549,10 @@ body > .project {
 
   body > .project img {
     max-width: 1200px;
+  }
+
+  body > .project img.ximg {
+    max-width: none;
   }
 
   .project:nth-of-type(7),
