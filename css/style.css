@@ -234,7 +234,7 @@ body > .project {
   display: none;
   background-image: url(../img/glitch.gif); }
 
-.project a:hover .ximg {
+.no-touch .project a:hover .ximg {
   display: block; }
 
 /* SMALL SCREENS */
