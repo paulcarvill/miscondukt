@@ -1,5 +1,6 @@
 /* Global Reset */
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, body {
@@ -232,7 +233,7 @@ body > .project {
   top: 0;
   left: 0;
   display: none;
-  background-image: url(../img/glitch.gif); }
+  background-image: url(../img/glitch2.gif); }
 
 .no-touch .project a:hover .ximg {
   display: block; }
