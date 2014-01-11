@@ -1,0 +1,23 @@
+---
+layout: default
+sitemap:
+    priority: 0.7
+    changefreq: monthly
+    lastmod: 2013-03-29T12:49:30-05:00
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  {% for index in (1..site.pages.size) %}{% for p in site.pages %}{% if p.index == index '%}
+      <url>
+        <loc>http://www.suki-rai.com/{{ p.path | remove:'/index.html' }}</loc>
+        <image:image>
+          <image:loc>http://www.suki-rai.com/{{ p.path | remove:'/index.html' }}/img1.jpg</image:loc> 
+        </image:image>
+        <priority>1.0</priority>
+      </url>
+      {% endif '%}{% endfor %}{% endfor %}
+      <url>
+        <loc>http://www.suki-rai.com/license</loc>
+        <priority>0.9</priority>
+      </url>
+</urlset>
