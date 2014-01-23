@@ -34,7 +34,32 @@ html, body, div, img, p, h1, h2, h3, h4, a {
 h1 {
   font-size: 21px;
   font-weight: 400;
-  float: left;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+}
+
+h1 {
+  -moz-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+h1 a::after {
+  border-bottom: 2px solid #fc28fc;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+h1 a:hover:after {
+  border-bottom: 2px solid #000;
 }
 
 @font-face {
@@ -98,6 +123,7 @@ a:link {
 #header-inner {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
 }
 
 .container {
@@ -436,10 +462,6 @@ body > .project {
 
   .description {
     padding: 2.5%;
-  }
-
-  h1 {
-    margin-left: $standardSpacing;
   }
 
   #footer-inner div:nth-of-type(3) {
