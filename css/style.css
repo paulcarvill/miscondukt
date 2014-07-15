@@ -446,8 +446,19 @@ body > .project {
 
   .project:nth-of-type(7),
   .project:nth-of-type(8),
+  .project:nth-of-type(9),
   .project-image-one {
     width: 504px; }
+
+  .project:nth-of-type(10),
+  .project:nth-of-type(11),
+  .project:nth-of-type(12),
+  .project:nth-of-type(13),
+  .project:nth-of-type(14),
+  .project:nth-of-type(15),
+  body:not(.projectpage) footer {
+    position: relative;
+    top: 336px; }
 
   footer p,
   footer h2 {
